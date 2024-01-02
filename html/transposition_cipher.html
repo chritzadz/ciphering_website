@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>Encrypting</title>
+     <link rel="stylesheet" href="{{ url_for('static', filename='css/transposition_cipher.css') }}"></link>
+</head>
+<body>
+     <div id="bg_star">
+          <h1>Transposition</h1>
+          <fieldset>
+               <form name="transposition_cipher" action="/transpo" method="post">
+                    <label for="key">KEY</label>
+                    <input type="text" id="key" name="key">
+                    <label for="normal">INPUT TEXT</label>
+                    <input type="text" id="normal" name="normal_text">
+                    <h3>{{ result }}</h3><br>
+                    <input type="submit" name = 'action' id="decrypt" value="decrypt">
+                    <input type="submit" name = 'action' id="encrypt" value="encrypt">
+               </form>
+          </fieldset>
+     </div>
+     <canvas id="mouse"></canvas>
+
+     <!--SCRIPT-->
+     <script type="text/javascript" src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+     <script type="text/javascript" src="{{ url_for('static', filename='js/starry_bg.js') }}"></script>
+     <script type="text/javascript" src="{{ url_for('static', filename='js/mouse_trail.js') }}"></script>
+</body>
+</html>

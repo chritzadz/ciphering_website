@@ -1,0 +1,85 @@
+@font-face {
+     font-family: "Crang";
+     src: url(Crang.ttf);
+}
+
+*{
+     margin: 0px;
+     padding: 0px;
+}
+
+#bg_star h1{
+     margin: 0;
+     text-align: center;
+     font-family: "Crang";
+     position: absolute;
+     top: 20%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     z-index: 2;
+ }
+
+#bg_star{
+     position: relative;
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+body {
+     margin:0;
+     background-color: #2B346C;
+}
+
+canvas{
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     top: 0;
+     left: 0;
+}
+
+fieldset{
+     width: 30%;
+     height: 420px; 
+     border: 0;
+     position: relative;
+     z-index: 3;
+}
+
+fieldset form{
+     z-index: 2;
+     position: absolute;
+     top: 50%; 
+     left: 50%;
+     transform: translate(-50%, -50%);
+     font-family: Crang;
+}
+
+fieldset form label {
+     display: flex;
+     justify-content: center;
+     text-align: center;
+     padding: 10px;
+}
+
+fieldset form input[type="text"] {
+     width: 100%;
+     box-sizing: border-box;
+}
+
+fieldset form input[type="submit"] {
+     margin: 5px;
+     display: inline-block;
+     width: 40%;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     text-align: center;
+}
+
+form h3{
+     font-family: Crang;
+     text-align: center;
+     font-size: 30px;
+     margin-top: 25px;
+}
